@@ -1,0 +1,47 @@
+/* .butn{
+   
+    width: 14vw;
+    margin-left: 20px;
+    border: 2px solid;
+}
+
+#main_series{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    
+}
+.series_text{
+    font-size: 3vw;
+} */
+body{
+    overflow-x: hidden;
+}
+.main-img{
+    width: 100%;
+    height: 100%;
+}
+#main-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.butn{
+   
+    width: 10vw;
+    margin-left: 20px;
+    border: 2px solid ;
+}
+.series_text{
+    font-size:80px;
+}

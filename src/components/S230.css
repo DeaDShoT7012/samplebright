@@ -1,0 +1,163 @@
+    .main-230{
+        background-image: url(../images/img2.png);
+        background-size: cover;
+        width: 100%;
+        height:100vh;
+    }
+
+    .main{
+        width: 100%;
+        /* height:100vh; */
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+       
+    }
+    .box{
+        position: relative;
+        width: 100%;
+        max-width: 1020px;
+        height: 640px;
+        background: white;
+        border-radius: 3.3rem;
+        box-shadow: 0 60px 40px -30px rgba(0,0,0,0.27);
+    
+    }
+    .inner-box{
+        position: absolute;
+        width: calc(100% - 4.1rem);
+        height: calc(100% - 44.1rem);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    
+    }
+    .forms-wrap{
+        position: absolute;
+        height: 100%;
+        width: 45%;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        transition: 0.8s ease-in-out;
+    }
+    form{
+        max-width: 260px;
+        width: 100%;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        transition: opacity 0.2s 0.4s;
+    }
+
+    .input-wrap{
+        position: relative;
+        height: 37px;
+        margin-bottom: 2rem;
+    }
+    .input-field{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: none;
+        border: none;
+        outline: none;
+        /* border-bottom: 1px solid #bbb; */
+        padding: 0;
+        font-size: 0.95rem;
+        color: #151111;
+        transition: 0.4s;
+        border-bottom:2px solid #151111 ;
+    
+    }
+    label{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 0.95rem;
+        color: rgb(121,121, 121);
+        pointer-events: none;
+        transition: 0.4s;
+        top: -10px;
+    }
+    
+
+    .sign-btn{
+        display: inline-block;
+        width: 100%;
+        height: 43px;
+        background-color: #151111;
+        color: white;
+        border: none;
+        cursor: pointer ;
+        border-radius: 0.8rem;
+        margin-bottom: 2rem;
+        transition: 0.3s;
+    }
+   
+    
+    
+    .carousel{
+        position: absolute;
+        height: 565px;
+        width: 55%;
+        left: 45%;
+        top: -280px;
+        /* background-color: #fc9595; */
+        background: #e4e4e4;
+        border-radius: 2rem;
+        display: grid;
+        grid-template-rows: auto 1fe;
+        padding-bottom: 2rem;
+        overflow: hidden;
+        transition: 0.8s ease-in-out;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    @media (max-width:800px){
+        .box{
+            height: 100vh;
+            max-width: 550px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .inner-box{
+            position: static;
+            transform: none;
+            width: revert;
+            height: revert;
+            padding: 1rem;
+        }
+        .forms-wrap{
+            position: revert;
+            width: 100%;
+            height: auto;
+        }
+        form{
+            max-width: revert;
+            padding: 1.5rem 2.5rem 2rem;
+        }
+        .carousel{
+            position: revert;
+            height: auto;
+            width:100%;
+            padding: 2rem 3rem;
+            display: flex;
+        }
+       .table-text{
+        border-collapse: separate;
+        border-spacing: 20px;
+    
+       }
+    }
